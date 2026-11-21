@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sherry的成长主页</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+        h1, h2 {
+    font-family: 'ZCOOL KuaiLe', "Microsoft YaHei", sans-serif !important;
+    letter-spacing: 2px; /* 让字稍微分开一点点，更可爱 */
+    font-weight: normal; /* 取消默认的粗体，这种字体细一点更好看 */
+}
+    body {
+        background-color: #f0f4f8; 
+        font-family: 'Segoe UI', sans-serif;
+        color: #333333;
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding: 20px;
+    }
+    .box {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        margin-bottom: 25px;
+        border-left: 5px solid #4a90e2;
+    }
+    nav {
+        background: #4a90e2;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    nav a {
+        color: white !important;
+        font-size: 18px;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    /* 下面这两行是我顺手给你补上的输入框和按钮样式，别忘了留着 */
+    input, textarea {
+        width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;
+    }
+    button {
+        background: #4a90e2; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;
+    }
+    /* 针对前三个段落的统一设置 */
+p {
+    color: #967265; 
+    font-family: 'KaiTi', '楷体', serif !important; 
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* 强制让“前面”的标签变深棕色 */
+strong {
+    color: #5e2d22; 
+    font-family: 'Microsoft YaHei', sans-serif; /* 前面的标签保持黑体，不加楷体，对比更明显 */
+}
+<style>
+    /* 这里面是你之前写的各种样式... */
+
+    /* 把刚才我给你的代码粘贴在这里 */
+    h2 {
+        color: #4e342e !important; /* 深棕色 */
+    }
+
+    label {
+        color: #78909c !important; /* 灰蓝色 */
+        font-family: 'YouYuan', '幼圆', sans-serif; 
+        font-weight: bold; 
+    }
+
+    input::placeholder, 
+    textarea::placeholder {
+        color: #b0bec5 !important; 
+        font-family: 'KaiTi', '楷体', serif; 
+    }
+    
+    button {
+        background-color: #4e342e; 
+        color: white;
+        /* ... 按钮的代码 ... */
+    }
+</style>
+    </style>
+</head>
+<body>
+    <!-- 导航栏，用来互相跳转 -->
+    <nav>
+        <a href="index.html">首页(关于我)</a>
+        <a href="study.html">学习记录</a>
+        <a href="project.html">项目作品</a>
+    </nav>
+
+    <div class="box">
+       <h1 style="font-family: 'YouYuan', '幼圆', sans-serif !important; font-weight: bold !important; font-size: 2.5em;color:#645b5b">你好，我是谢汝瑶</h1>
+        <p><strong>专业：</strong>华中科技大学 软件工程 大一新生</p>
+        <p><strong>一句话介绍自己：</strong>一个目前啥也不会，但在不断摸索，准备在大学四年疯狂打怪升级的萌新程序员。</p>
+        <p><strong>学习方向：</strong>目前正在摸索 C语言 基础，未来想搞懂前端和后端。</p>
+        <p><strong>联系我：</strong>2960436070@hust.edu.cn</p>
+    </div>
+
+    <!-- 这是一个简单的表单，满足老师要求的交互元素 -->
+    <div class="box">
+        <h2>给我留言</h2>
+        <form>
+            <label>你的名字：</label>
+            <input type="text" placeholder="请输入名字">
+            <label>留言内容：</label>
+            <textarea rows="3" placeholder="有什么想对我说的？"></textarea>
+            <button type="button" onclick="alert('你成功在我的个人主页上留下了足迹哦！')">发送</button>
+        </form>
+    </div>
+</body>
+</html>

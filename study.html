@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>学习记录</title>
+    <style>
+        /* --- 1. 整体页面设置 --- */
+body { 
+    font-family: 'KaiTi', '楷体', serif; /* 整体默认用楷体 */
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f0f4f8; /* 浅灰蓝背景 */
+}
+
+/* --- 2. 顶部绿色导航栏 --- */
+nav {
+    background: #81c784; /* 导航栏绿色 */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a { 
+    color: white !important; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin: 0 15px;
+    font-size: 18px;
+    font-family: 'Microsoft YaHei', sans-serif; /* 导航栏保持黑体 */
+}
+
+/* --- 3. 绿色卡片框 --- */
+.box { 
+    background-color: #f6fbf1; /* 极淡的抹茶绿背景 */
+    border: 2px solid #c8e6c9; 
+    border-left: 8px solid #81c784; /* 左边亮绿粗线 */
+    padding: 25px; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(129, 199, 132, 0.15); 
+    margin-bottom: 25px; 
+}
+
+/* --- 4. 标题（记录一、记录二）--- */
+h2 {
+    color: #1b5e20 !important; /* 深墨绿色 */
+    font-family: 'KaiTi', '楷体', serif !important; 
+    font-weight: bold !important; 
+    font-size: 1.5em; 
+}
+
+/* --- 5. 标签（学了什么、遇到问题）--- */
+strong {
+    color: #2e7d32 !important; /* 稍浅的墨绿 */
+    font-family: 'Microsoft YaHei', '微软雅黑', sans-serif !important; /* 保持黑体 */
+}
+
+/* --- 6. 正文（楷体浅绿）--- */
+p {
+    color: #4caf50 !important; /* 更浅的草绿 */
+    font-family: 'KaiTi', '楷体', serif !important; 
+    font-size: 1.1em; 
+    line-height: 1.8; 
+}
+
+/* --- 7. 日期颜色 --- */
+.date {
+    color: #2e7d32 !important; 
+    font-size: 0.9em;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">首页(关于我)</a>
+        <a href="study.html">学习记录</a>
+        <a href="project.html">项目作品</a>
+    </nav>
+
+    <div class="box">
+        <h2>记录1：第一次配置编程环境</h2>
+        <p class="date">时间：2026年8月9日</p>
+        <p><strong>学了什么：</strong>学会了怎么下载 VS Code 和配置 C语言编译器。</p>
+        <p><strong>遇到问题：</strong>代码写完后运行，终端里弹出一堆乱码，看不懂。</p>
+        <p><strong>解决过程：</strong>去B站搜了教程，又问了 AI，发现是文件编码格式没选对，改成了 UTF-8 就搞定了。</p>
+    </div>
+
+    <div class="box">
+        <h2>记录2：第一次写Hello World</h2>
+        <p class="date">时间：2026年8月9日</p>
+        <p><strong>学了什么：</strong>知道了 #include <stdio.h> 是啥意思，能打印出一句话了。</p>
+        <p><strong>遇到问题：</strong>总是忘记在句末打分号。</p>
+        <p><strong>解决过程：</strong>报错提示说语法错误，检查后发现是漏了分号，以后每次写完都先检查标点符号。</p>
+    </div>
+
+    <div class="box">
+        <h2>记录3：跟着《啊哈，C语言》这本书打出第一个小程序</h2>
+        <p class="date">时间：2026年8月19日</p>
+        <p><strong>学了什么：</strong>写一个猜数游戏，猜错了电脑自动关机的代码</p>
+        <p><strong>遇到问题：</strong>把++i写成了i++，导致局数计数出错，多敲了个=，让=变成了==，出现报错</p>
+        <p><strong>解决过程：</strong>问了AI，并在网上找了有关的网课，听懂了i++与++i的区别</p>
+    </div>
+    
+    <div class="box">
+        <h2>记录4：解决了一个很有意思N皇后问题</h2>
+        <p class="date">时间：2026年11月13日</p>
+        <p><strong>学了什么：</strong>回溯法，位运算</p>
+        <p><strong>遇到问题：</strong>对角线偏移写错导致输入N=8输出93，而不是92</p>
+        <p><strong>解决过程：</strong>找到第一个出错的N和第一个出错的解，单独复现。比如发现N=4只找到1个解，就盯住“第二个接为什么被漏掉”。</p>
+    </div>
+
+    <div class="box">
+        <h2>记录5：开始做这个网页作业</h2>
+        <p class="date">时间：2026年11月21日</p>
+        <p><strong>学了什么：</strong>接触了 HTML 和 CSS，知道怎么让文字变颜色，怎么建立超链接。</p>
+        <p><strong>遇到问题：</strong>一开始用手机做不了，后来换了电脑，不知道怎么把网页传到 GitHub 上。</p>
+        <p><strong>解决过程：</strong>查了网上的图文教程，学会了在 GitHub 网页端直接点击 Upload files 上传文件。</p>
+    </div>
+</body>
+</html>

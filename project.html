@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>项目作品</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
+       nav {
+    background: #9f76a7; /* 紫色导航栏 */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box { 
+    background-color: #e8e0e9; 
+    border: 2px solid #ad8db3; 
+    border-left: 8px solid #806386; 
+    padding: 25px; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(186, 104, 200, 0.15); 
+    margin-bottom: 25px; 
+}
+
+.box h2 {
+    color: #694b70; 
+}
+    /* 1. 把“技能展示：”、“解决了什么问题：”改成稍浅的深紫色 + 楷体 */
+strong {
+    color: #7b1fa2 !important; /* 比标题略浅的深紫 */
+    font-family: 'KaiTi', '楷体', serif !important; /* 强制换楷体 */
+    font-size: 1.1em; /* 稍微放大一点，凸显标签感 */
+}
+
+/* 2. 把后面的小字正文改成浅紫色 + 宋体 */
+p {
+    color: #ab47bc !important; /* 偏浅的梦幻紫 */
+    font-family: 'SimSun', '宋体', serif !important; /* 强制换宋体 */
+    line-height: 1.8; /* 宋体配宽行距，文艺感拉满 */
+}
+
+/* 3. （顺便优化）如果你的“作品截图：”也是一个标签，它也会变紫。
+      如果你不想让日期或者某些 p 标签变成浅紫，可以单独调 */
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">首页(关于我)</a>
+        <a href="study.html">学习记录</a>
+        <a href="project.html">项目作品</a>
+    </nav>
+
+    <div class="box">
+        <h2>作品一：个人成长主页</h2>
+        <p><strong>技能展示：</strong>HTML基础排版、CSS简单美化、GitHub基本操作。</p>
+        <p><strong>解决了什么问题：</strong>以前完全不会做网页，现在成功用代码建起了自己的第一个个人空间，并且实现了多个页面之间的互相跳转。</p>
+        <p><strong>初次作品截图：</strong></p>
+        <!-- 下面这行代码是用来放截图的，你可以把你网页的截图保存为 screenshot.png 放在同一个文件夹里 -->
+        <img src="screenshot.png" alt="网页截图" style="max-width: 100%; border: 1px solid #ccc;">
+    </div>
+
+    <div class="box">
+        <h2>作品二：N皇后问题求解算法</h2>
+        <p><strong>技能展示：</strong>C语言基础语法、回溯算法</p>
+        <p><strong>解决了什么问题：</strong>通过回溯法解决了经典的N皇后问题，保证了任意两个皇后不在同一行，同一列或同一对角线上，虽然代码不算最优化，但是我自己一行一行敲出来的。</p>
+        <p><strong>作品截图：</strong></p>
+        <!-- 下面这行代码是用来放截图的，你可以把你网页的截图保存为 game.png 放在同一个文件夹里 -->
+        <img src="game.png" alt="网页截图" style="max-width: 100%; border: 1px solid #ccc;">
+    </div>
+</body>
+</html>
